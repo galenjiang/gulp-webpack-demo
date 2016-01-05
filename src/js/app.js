@@ -1,8 +1,7 @@
 
 require.ensure([], function(require) {
-    var a = require("./core/a").a;
-    a()
-
+  var a = require("./core/a").a;
+  a()
 });
 
 require.ensure([], function(require) {
@@ -10,4 +9,6 @@ require.ensure([], function(require) {
   b()
 
 });
-console.log([1,2,4,5].map(x => x * x));
+
+
+require("../css/app.scss");

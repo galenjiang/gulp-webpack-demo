@@ -1,6 +1,6 @@
-webpackJsonp([1],[
-/* 0 */,
-/* 1 */
+webpackJsonp([1],{
+
+/***/ 5:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -10,5 +10,6 @@ webpackJsonp([1],[
 	};
 
 /***/ }
-]);
+
+});
 //# sourceMappingURL=1.1.js.map

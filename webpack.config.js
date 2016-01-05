@@ -29,18 +29,21 @@ module.exports = {
   module: {
     //各种加载器，即让各种文件格式可用require引用
     loaders: [{
-    //   test: /\.vue$/,
-    //   loader: 'vue'
-    // }, {
-    //   test: /\.(png|jpg|gif)$/,
-    //   loader: 'file?name=[name].[ext]?[hash]'
-    // }, {
+      test: /\.(png|jpg|gif)$/,
+      loader: 'file?name=[name].[ext]?[hash]'
+    }, {
       test: /\.css$/,
-      loader: 'css-loader/style-loader'
+      loader: 'style-loader!css-loader'
+    },{
+      test: /\.scss$/,
+      loader: 'style-loader!css-loader!sass-loader'
     },{
       test: /\.js$/,
       exclude: /node_modules/,
       loader: "babel-loader"
+    },{
+      test: /\.scss$/,
+      loader: "sass-loader"
     }]
   },
   babel: {
@@ -51,15 +54,13 @@ module.exports = {
     //配置别名，在项目中可缩减引用路径
     alias: {
       jQuery: srcDir + "js/lib/jquery.min",
-      vue: srcDir + "js/lib/vue.min",
       commons: srcDir + "js/core/commons"
     },
     root: "./"
   },
   plugins: [
     new webpack.ProvidePlugin({
-      "jQuery": "jQuery",
-      "Vue": "vue"
+      "jQuery": "jQuery"
     })
   ]
 };

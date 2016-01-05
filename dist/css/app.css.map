@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AAEA,MACE,MAAO,MACP,OAAQ,MACR,iBAAkB","file":"app.css","sourcesContent":["@charset \"UTF-8\";\r\n\r\n.div1 {\r\n  width: 100px;\r\n  height: 100px;\r\n  background-color: #f00;\r\n}\r\n"],"sourceRoot":"/source/"}
