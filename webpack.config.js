@@ -2,7 +2,7 @@ var webpack = require("webpack");
 var path = require('path');
 var fs = require("fs");
 var srcDir = "src/";
-var distDir = "dist/";
+var distDir = __dirname  + "/dist/";
 
 function getEntry() {
   var jsPath = path.resolve(srcDir, "js");
@@ -26,11 +26,12 @@ module.exports = {
     publicPath: "../js/",
     filename: "[name].js"
   },
+
   module: {
     //各种加载器，即让各种文件格式可用require引用
     loaders: [{
       test: /\.(png|jpg|gif)$/,
-      loader: 'file?name=[name].[ext]?[hash]'
+      loader: 'file?name=img/[name].[ext]?[hash]'
     }, {
       test: /\.css$/,
       loader: 'style-loader!css-loader'

@@ -1,3 +1,3 @@
 exports.a = function(){
-  console.log("a")
+  console.log("bbb aaa")
 }

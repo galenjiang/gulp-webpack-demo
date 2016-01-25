@@ -97,6 +97,7 @@
 
 	"use strict";
 	
+	__webpack_require__(1);
 	__webpack_require__.e/* nsure */(1, function (require) {
 	  var a = __webpack_require__(5).a;
 	  a();
@@ -106,8 +107,6 @@
 	  var b = __webpack_require__(6).b;
 	  b();
 	});
-	
-	__webpack_require__(1);
 
 /***/ },
 /* 1 */
@@ -232,7 +231,7 @@
 		styleElementsInsertedAtTop = [];
 	
 	module.exports = function(list, options) {
-		if(false) {
+		if(true) {
 			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
 		}
 	

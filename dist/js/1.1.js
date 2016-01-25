@@ -6,7 +6,7 @@ webpackJsonp([1],{
 	"use strict";
 	
 	exports.a = function () {
-	  console.log("a");
+	  console.log("bbb aaa");
 	};
 
 /***/ }
