@@ -1,12 +1,12 @@
 {
   "name": "gulp-webpack",
   "version": "0.1.0",
-  "description": "",
+  "description": "generator for template of gulp-webpack project based on es6",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp"
   },
-  "author": "",
+  "author": "galenjiang",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.3.15",
