@@ -47,6 +47,7 @@ module.exports = {
       loader: "sass-loader"
     }]
   },
+  // 配置babel 环境
   babel: {
     presets: ['es2015', 'stage-0'],
     plugins: ['transform-runtime']
